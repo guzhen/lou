@@ -1,0 +1,44 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style  type="text/css">
+table {
+    width: 100%;
+    border: 1px solid gray;
+    border-collapse:collapse;
+    table-layout: fixed;
+}
+td {
+    border: 1px solid gray;
+    text-align: center;
+    padding: 0px;
+    font-weight:bold;
+}
+.month {
+    border: 0px;
+}
+.blank {
+    border: 0px;
+}
+</style>
+<title>lou</title>
+<script src="output.js"></script>
+</head>
+<body>
+    <button type="button" onclick="refreshpage()">生成</button>
+    从
+    <input type="text" id="iyear" maxlength="4" size="4"/>年
+    <input type="text" id="imonth" maxlength="2" size="2"/>月
+    <input type="text" id="iday" maxlength="2" size="2"/>日
+    开始的
+    <input type="text" id="ipage_len" maxlength="1" size="1"/>个月
+    <button type="button" onclick="freshpage()">重置</button>
+    <br />
+    <button type="button" onclick="redefine()">重定义</button>
+    <input type="text" id="syear" maxlength="4" size="4"/>年
+    <input type="text" id="smonth" maxlength="2" size="2"/>月
+    <input type="text" id="sday" maxlength="2" size="2"/>日
+    为“早1”
+    <hr/>
+    <div><script type="text/javascript">freshpage();</script></div>
+</body></html>
