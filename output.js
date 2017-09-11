@@ -59,7 +59,7 @@ function writehtml(result)
 }
 //-------------------------
 //       parse
-var startdate=[2015,7,3,0];
+var startdate=[2016,11,2,0];
 function shiftindex(target)
 {
     var data=startdate;
@@ -70,8 +70,8 @@ function shiftindex(target)
 }
 function louparse(target, page_len)
 {
-    var work=["早1", "早2", "午1", "午2", "夜1", "夜2", "休1", "休2"];
-    var color=["blue", "blue", "green", "green", "red", "red", "#FFCC00", "#FFCC00"];
+    var work=["午1", "午2", "夜1", "夜2", "休1", "休2"];
+    var color=["green", "green", "red", "red", "#FFCC00", "#FFCC00"];
     var index = shiftindex(target) % work.length;
     if (index < 0) {index += work.length;}
     var target_t=new Date(target[0], target[1]-1, target[2]);
